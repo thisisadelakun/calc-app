@@ -343,16 +343,3 @@ h1 {
 .switches-col input:checked+.switch-toggle::before {
     transform: translateX(100%);
 }
-
-
-/* --- Attribution --- */
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(6, 55%, 54%);
-    text-decoration: none;
-}

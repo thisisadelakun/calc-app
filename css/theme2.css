@@ -87,14 +87,3 @@ h1,
 .keypad-col button:nth-child(18):hover {
     background-color: var(--soft-cyan-shdw3);
 }
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    color: bisque;
-}
-
-.attribution a {
-    color: var(--light-yellow);
-    text-decoration: none;
-}

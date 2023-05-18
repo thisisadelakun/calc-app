@@ -6,21 +6,17 @@ const calcPro = document.querySelector('.calcpro-col');
 const hideTag = document.querySelector('.hiddentag');
 const showTag = document.querySelector('.showntag')
 
-switchLevel.addEventListener('click', function () {
-    if (calcPro.style.display === 'none') {
+switchLevel.addEventListener('change', function () {
+    if (this.checked) {
         calcPro.style.display = 'block';
         hideTag.style.display = "block";
         calc.style.display = 'none';
         showTag.style.display = "none";
-
-
-        switchLevel.checked = true;
     } else {
         calcPro.style.display = 'none';
         hideTag.style.display = "none";
         calc.style.display = 'block';
         showTag.style.display = "block";
-        switchLevel.checked = false;
     }
 });
 

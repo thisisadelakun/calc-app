@@ -20,13 +20,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/calcapp_mobile.png)
+![](./screenshots/calcapp_mobile2.png)
+![](./screenshots/calcapp_%20desktop2.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/thisisadelakun/calc-app)
+- Live Site URL: [calc App](https://thisisadelakun.github.io/calc-app/)
 
 ## My process
 
@@ -41,7 +43,9 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- LinkedIn - [Adelakun Abayomi](https://www.linkedin.com/in/abayomi-adelakun-897227178/)
+- Portfolio - [Adelakun Abayomi](https://adelakunportfolio.netlify.app/)
+- Frontend Mentor - [@thisisadelakun](https://www.frontendmentor.io/profile/thisisadelakun)
+- Twitter - [@yourusername](https://www.twitter.com/thisisadelakun)
+
 

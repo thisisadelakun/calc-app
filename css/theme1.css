@@ -82,14 +82,3 @@ h1,
 .keypad-col button:nth-child(18):hover {
     background-color: hsl(25, 86%, 60%);
 }
-
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsla(185, 42%, 37%, 0.726);
-    text-decoration: none;
-}
