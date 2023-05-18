@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./calculator-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="#">
+    <title>calculator</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="calculator">
+
+            <div class="header-text">
+                <div class="header-left" id="header-left">
+                    <h1 class="showntag">calc</h1>
+                    <h1 class="hiddentag">calc <span>pro</span></h1>
+                </div>
+                <div class="header-right" id="header-right">
+                    <div class="theme-div" id="theme-div">
+                        <span>THEME</span>
+                    </div>
+
+                    <div class="choose-theme" id="choose-theme">
+                        <div class="choose-theme-number" id="choose-theme-number">
+                            <label for="theme1">1</label>
+                            <label for="theme2">2</label>
+                            <label for="theme3">3</label>
+                        </div>
+                        <div class="choose-theme-check" id="choose-theme-check">
+                            <input type="radio" id="theme1" name="theme" value="0" checked />
+                            <input type="radio" id="theme2" name="theme" value="1" />
+                            <input type="radio" id="theme3" name="theme" value="2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-col">
+
+                <div>
+                    <input type="text" class="displayscreen" value="" disabled />
+                </div>
+
+
+                <div class="keypad-col" id="keypad-col">
+                    <button type="button" class="keypadbtn digit" data-key="7">7</button>
+                    <button type="button" class="keypadbtn digit" data-key="8">8</button>
+                    <button type="button" class="keypadbtn digit" data-key="9">9</button>
+                    <button type="button" class="keypadbtn delete" data-key="DEL">DEL</button>
+
+                    <button type="button" class="keypadbtn digit" data-key="4">4</button>
+                    <button type="button" class="keypadbtn digit" data-key="5">5</button>
+                    <button type="button" class="keypadbtn digit" data-key="6">6</button>
+                    <button type="button" class="keypadbtn operator" data-key="+">+</button>
+
+                    <button type="button" class="keypadbtn digit" data-key="1">1</button>
+                    <button type="button" class="keypadbtn digit" data-key="2">2</button>
+                    <button type="button" class="keypadbtn digit" data-key="3">3</button>
+                    <button type="button" class="keypadbtn operator" data-key="-">-</button>
+
+                    <button type="button" class="keypadbtn decimalpoint" data-key=".">.</button>
+                    <button type="button" class="keypadbtn digit" data-key="0">0</button>
+                    <button type="button" class="keypadbtn operator" data-key="/">/</button>
+                    <button type="button" class="keypadbtn operator" data-key="x">x</button>
+
+                    <button class="keypadbtn reset" data-key="RESET" type="reset">RESET</button>
+                    <button type="button" class="keypadbtn operator" data-key="=">=</button>
+                </div>
+
+
+            </div>
+
+
+            <div class="calcpro-col">
+                <div>
+                    <input type="text" class="displayscreenPro" value="" disabled />
+                </div>
+
+                <div class="keypad-colPro" id="keypad-colPro">
+
+                    <button type="button" class="keypadbtnPro function" data-key="power">x<sup>y</sup></button>
+                    <button class="keypadbtnPro" data-key="changeSignPro">±</button>
+                    <button type="button" class="keypadbtnPro operatorPro" data-key="percentage">%</button>
+                    <button type="button" class="keypadbtnPro operatorPro" data-key="multiply">x</button>
+                    <button type="button" class="keypadbtnPro deletePro" data-key="delete">DEL</button>
+
+                    <button type="button" class="keypadbtnPro digitPro" data-key="7">7</button>
+                    <button type="button" class="keypadbtnPro digitPro" data-key="8">8</button>
+                    <button type="button" class="keypadbtnPro digitPro" data-key="9">9</button>
+                    <button type="button" class="keypadbtnPro" data-key="power">^</button>
+                    <button type="button" class="keypadbtnPro operatorPro" data-key="divide">/</button>
+
+                    <button type="button" class="keypadbtnPro digitPro" data-key="4">4</button>
+                    <button type="button" class="keypadbtnPro digitPro" data-key="5">5</button>
+                    <button type="button" class="keypadbtnPro digitPro" data-key="6">6</button>
+                    
+                    <button type="button" class="keypadbtnPro" data-key="sqrt">√</button>
+                    <button type="button" class="keypadbtnPro operatorPro" data-key="add">+</button>
+
+                    <button type="button" class="keypadbtnPro digitPro" data-key="1">1</button>
+                    <button type="button" class="keypadbtnPro digitPro" data-key="2">2</button>
+                    <button type="button" class="keypadbtnPro digitPro" data-key="3">3</button>
+                    <button type="button" class="keypadbtnPro" data-key="inverse">1/x</button>
+                    <button type="button" class="keypadbtnPro operatorPro" data-key="subtract">-</button>
+
+                    <button type="button" class="keypadbtnPro digitPro" data-key="0">0</button>
+                    <button type="button" class="keypadbtnPro decimalpointPro" data-key=".">.</button>
+                    <button class="keypadbtnPro resetPro" id="acButton" data-key="AC" type="reset">AC</button>
+                    <button type="button" class="keypadbtnPro operatorPro" data-key="equal">=</button>
+                </div>
+            </div>
+
+
+            <div class="switches-container">
+                <div class="switches-col">
+                    <p>calc</p>
+                    <input class="switch" type="checkbox" name="setlevel" />
+                    <div class="switch-toggle"></div>
+                    <p>calc <span>pro</span></p>
+                </div>
+            </div>
+
+
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://adelakunportfolio.netlify.app/">Adelakun Abayomi</a>.
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>

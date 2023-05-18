@@ -1,0 +1,100 @@
+:root {
+    /* -------- THEME3 ---------*/
+
+    /* Background */
+    --main-bgr3: hsl(268, 75%, 9%);
+    --toggle-keypad-bgr3: hsl(268, 71%, 12%);
+    --screen-bgr3: hsl(268, 71%, 12%);
+
+    /* Keys */
+    --dark-violet-key-bgr3: hsl(281, 89%, 26%);
+    --vivid-magenta-key-shdw: hsl(285, 91%, 52%);
+    --pure-cyan-bgr3-toggle: hsl(176, 100%, 44%);
+    --soft-cyan-shdw3: hsl(177, 92%, 70%);
+    --very-dark-violet-key-bgr3: hsl(268, 47%, 21%);
+    --dark-magenta-key-shdw: hsl(290, 70%, 36%);
+
+    /* Text */
+    --light-yellow: hsl(52, 100%, 62%);
+    --very-dark-blue: hsl(198, 20%, 13%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--main-bgr3);
+}
+
+h1,
+.header-right,
+.displayscreenPro,
+.displayscreen {
+    color: var(--light-yellow);
+}
+
+.choose-theme-check {
+    background-color: var(--toggle-keypad-bgr3);
+}
+
+.choose-theme-check input[type="radio"]:checked {
+    background-color: var(--soft-cyan-shdw3);
+}
+
+.displayscreen,
+.displayscreenPro {
+    background-color: var(--screen-bgr3);
+    border: none;
+}
+
+.keypad-colPro,
+.keypad-col {
+    background-color: var(--toggle-keypad-bgr3);
+}
+
+.keypadbtnPro,
+.keypadbtn {
+    background-color: var(--very-dark-violet-key-bgr3);
+    box-shadow: 0 5px var(--dark-magenta-key-shdw);
+    color: var(--light-yellow);
+}
+
+.keypadbtnPro:hover,
+.keypadbtn:hover {
+    background-color: hsl(281, 90%, 34%);
+}
+
+.keypad-colPro button:nth-child(5),
+.keypad-colPro button:nth-child(23),
+.keypad-col button:nth-child(4),
+.keypad-col button:nth-child(17) {
+    background-color: var(--dark-violet-key-bgr3);
+    box-shadow: 0 5px var(--vivid-magenta-key-shdw);
+}
+
+.keypad-colPro button:nth-child(5):hover,
+.keypad-colPro button:nth-child(23):hover,
+.keypad-col button:nth-child(4):hover,
+.keypad-col button:nth-child(17):hover {
+    background-color: hsl(281, 53%, 47%);
+}
+
+.keypad-colPro button:nth-child(24),
+.keypad-col button:nth-child(18) {
+    background-color: var(--pure-cyan-bgr3-toggle);
+    box-shadow: 0 5px var(--soft-cyan-shdw3);
+}
+
+.keypad-colPro button:nth-child(24):hover,
+.keypad-col button:nth-child(18):hover {
+    background-color: var(--soft-cyan-shdw3);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: bisque;
+}
+
+.attribution a {
+    color: var(--light-yellow);
+    text-decoration: none;
+}

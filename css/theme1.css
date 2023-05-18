@@ -1,0 +1,95 @@
+:root {
+    /* -------- THEME2 ---------*/
+
+    /* Background */
+    --main-bgr2: hsl(0, 0%, 90%);
+    --toggle-keypad-bgr2: hsl(0, 5%, 81%);
+    --screen-bgr2: hsl(0, 0%, 93%);
+
+    /* Keys */
+    --dark-moderate-cyan-key-bgr2: hsl(185, 42%, 37%);
+    --very-dark-cyan-key-shdw: hsl(185, 58%, 25%);
+    --orangekey-bgr2-toggle: hsl(25, 98%, 40%);
+    --orangekey-shdw2: hsl(25, 99%, 27%);
+    --light-grayish-yellow-key-bgr2: hsl(45, 7%, 89%);
+    --dark-rayish-orange-key-shdw: hsl(35, 11%, 61%);
+
+    /* Text */
+    --very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    background-color: var(--main-bgr2);
+}
+
+h1,
+.header-right,
+.displayscreenPro,
+.displayscreen {
+    color: var(--very-dark-grayish-yellow);
+}
+
+.choose-theme-check {
+    background-color: var(--toggle-keypad-bgr2);
+}
+
+.choose-theme-check input[type="radio"]:checked {
+    background-color: var(--orangekey-bgr2-toggle);
+}
+
+.displayscreen,
+.displayscreenPro {
+    background-color: var(--screen-bgr2);
+    border: none;
+}
+
+.keypad-colPro,
+.keypad-col {
+    background-color: var(--toggle-keypad-bgr2);
+}
+
+.keypadbtnPro,
+.keypadbtn {
+    background-color: var(--light-grayish-yellow-key-bgr2);
+    box-shadow: 0 5px var(--dark-rayish-orange-key-shdw);
+}
+
+.keypad-colPro button:nth-child(5),
+.keypad-colPro button:nth-child(23),
+.keypad-col button:nth-child(4),
+.keypad-col button:nth-child(17) {
+    background-color: var(--dark-moderate-cyan-key-bgr2);
+    box-shadow: 0 5px var(--very-dark-cyan-key-shdw);
+}
+
+
+.keypad-colPro button:nth-child(5):hover,
+.keypad-colPro button:nth-child(23):hover,
+.keypad-col button:nth-child(4):hover,
+.keypad-col button:nth-child(17):hover {
+    background-color: hsla(185, 42%, 37%, 0.726);
+}
+
+.keypad-colPro button:nth-child(24),
+.keypad-col button:nth-child(18) {
+    background-color: var(--orangekey-bgr2-toggle);
+    box-shadow: 0 5px var(--orangekey-shdw2);
+}
+
+.keypad-colPro button:nth-child(24):hover,
+.keypad-col button:nth-child(18):hover {
+    background-color: hsl(25, 86%, 60%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsla(185, 42%, 37%, 0.726);
+    text-decoration: none;
+}

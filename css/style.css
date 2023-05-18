@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* -------- THEME1 ---------*/
+
+    /* Background */
+    --main-bgr1: hsl(222, 26%, 31%);
+    --toggle-keypad-bgr1: hsl(223, 31%, 20%);
+    --screen-bgr1: hsl(224, 36%, 15%);
+
+    /* Keys */
+    --dark-blue-key-bgr1: hsl(225, 21%, 49%);
+    --blue-key-shdw: hsl(224, 28%, 35%);
+    --redkey-bgr1-toggle: hsl(6, 63%, 50%);
+    --redkey-shdw1: hsl(6, 70%, 34%);
+    --light-grayish-orange-key-bgr1: hsl(30, 25%, 89%);
+    --grayish-orange-key-shdw: hsl(28, 16%, 65%);
+
+    /* Text */
+    --very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    background-color: var(--main-bgr1);
+}
+
+/* ------- MAIN -------- */
+
+main {
+    margin: 0 auto;
+    padding: 35px 25px;
+    max-width: 500px;
+
+}
+
+/* calc */
+
+.header-text,
+.header-textPro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 10px;
+    color: var(--white);
+}
+
+.header-rightPro,
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--white);
+
+}
+
+.theme-div span {
+    margin-right: 18px;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+.choose-theme {
+    position: relative;
+}
+
+.choose-theme-number {
+    gap: 17px;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.choose-theme-check {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 75px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: var(--toggle-keypad-bgr1);
+}
+
+#theme1,
+#theme2,
+#theme3 {
+    appearance: none;
+    position: absolute;
+    width: 16px;
+    display: flex;
+    height: 15px;
+    border-radius: 50%;
+    top: 5.9px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#theme1 {
+    left: 6px;
+}
+
+#theme2 {
+    left: 31px;
+}
+
+#theme3 {
+    left: 55px;
+}
+
+.choose-theme-check input[type="radio"]:checked {
+    background-color: var(--redkey-bgr1-toggle);
+}
+
+
+.displayscreen,
+.displayscreenPro {
+    width: 100%;
+    height: 6.5rem;
+    text-align: right;
+    font-size: 50px;
+    border-radius: 10px;
+    color: white;
+    padding: 1.5rem 1.2rem;
+    font-weight: 700;
+    background-color: var(--screen-bgr1);
+}
+
+.keypad-col {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    min-height: 400px;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: var(--toggle-keypad-bgr1);
+    align-items: stretch;
+}
+
+.keypad-colPro {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 400px;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: var(--toggle-keypad-bgr1);
+    align-items: stretch;
+}
+
+.keypadbtn {
+    width: 100%;
+    height: 4rem;
+    margin: auto;
+    padding-top: 3px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--light-grayish-orange-key-bgr1);
+    box-shadow: 0 5px var(--grayish-orange-key-shdw);
+    font-size: 32px;
+    font-weight: 700;
+    transition: all .03s;
+    cursor: pointer;
+}
+
+.keypadbtnPro {
+    width: 100%;
+    height: 3.5rem;
+    margin: auto;
+    padding-top: 3px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--light-grayish-orange-key-bgr1);
+    box-shadow: 0 5px var(--grayish-orange-key-shdw);
+    font-size: 23px;
+    font-weight: 700;
+    transition: all .03s;
+    cursor: pointer;
+}
+
+.keypadbtn:active,
+.keypadbtnPro:active {
+    transform: translateY(4px);
+    transition: .3s linear;
+}
+
+.keypadbtn:hover,
+.keypadbtnPro:hover {
+    background-color: white;
+}
+
+.keypad-col button:nth-child(4),
+.keypad-col button:nth-child(17) {
+    background-color: var(--dark-blue-key-bgr1);
+    box-shadow: 0 5px var(--blue-key-shdw);
+    color: var(--white);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.keypad-col button:nth-child(4):hover,
+.keypad-col button:nth-child(17):hover {
+    background-color: hsl(224, 26%, 68%);
+}
+
+.keypad-col button:nth-child(17) {
+    grid-column: span 2;
+}
+
+.keypad-col button:nth-child(18) {
+    grid-column: span 2;
+    background-color: var(--redkey-bgr1-toggle);
+    box-shadow: 0 5px var(--redkey-shdw1);
+    color: var(--white);
+}
+
+.keypad-colPro button:nth-child(24),
+.keypad-col button:nth-child(18):hover {
+    background-color: hsl(6, 55%, 54%);
+
+}
+
+.keypad-colPro button:nth-child(21) {
+    grid-column: span 2;
+    text-align: left;
+    padding-left: 2rem;
+
+}
+
+.keypad-colPro button:nth-child(5),
+.keypad-colPro button:nth-child(23) {
+    font-size: 19px;
+    font-weight: 700;
+    background-color: var(--dark-blue-key-bgr1);
+    box-shadow: 0 5px var(--blue-key-shdw);
+    color: var(--white);
+}
+
+.keypad-colPro button:nth-child(5):hover,
+.keypad-colPro button:nth-child(23):hover {
+    background-color: hsl(224, 26%, 68%);
+}
+
+.keypad-colPro button:nth-child(24) {
+    background-color: var(--redkey-bgr1-toggle);
+    box-shadow: 0 5px var(--redkey-shdw1);
+    color: var(--white);
+}
+
+/* extras */
+.hiddentag,
+.calcpro-col {
+    display: none;
+}
+
+.header-left h1 span {
+    position: relative;
+    font-size: 16px;
+    color: rgb(252, 8, 8);
+    left: -8px;
+}
+
+
+/*  ---- switches ------ */
+
+.switches-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.switches-col {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+}
+
+.switches-col p {
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+}
+
+.switches-col p>span {
+    font-size: 11px;
+    margin-left: -3px;
+    font-weight: 600;
+    color: brown;
+}
+
+.switches-col input {
+    appearance: none;
+    opacity: 0;
+    cursor: pointer;
+    inset: 0;
+    position: absolute;
+}
+
+.switch-toggle {
+    position: relative;
+    width: 2.2rem;
+    height: 1.2rem;
+    border-radius: 100vmax;
+    pointer-events: none;
+    background-color: var(--toggle-keypad-bgr1);
+}
+
+.switch-toggle::before {
+    content: "";
+    position: absolute;
+    width: .9em;
+    height: .8em;
+    background-color: var(--redkey-bgr1-toggle);
+    border-radius: 100vmax;
+    top: 0.22rem;
+    left: 0.2rem;
+    transition: transform 0.2s cubic-bezier(0.95, 0.05, 0.17, 1.17);
+}
+
+.switches-col input:checked+.switch-toggle::before {
+    transform: translateX(100%);
+}
+
+
+/* --- Attribution --- */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(6, 55%, 54%);
+    text-decoration: none;
+}
