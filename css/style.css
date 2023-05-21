@@ -140,7 +140,7 @@ h1 {
     color: white;
     padding: 1.5rem 1.2rem;
     font-weight: 700;
-    background-color: var(--screen-bgr1);
+    background-color: hsl(224, 36%, 15%);
 }
 
 .keypad-col {
@@ -175,6 +175,7 @@ h1 {
     padding-top: 3px;
     border: none;
     border-radius: 6px;
+    color: hsl(224, 36%, 15%);
     background-color: var(--light-grayish-orange-key-bgr1);
     box-shadow: 0 5px var(--grayish-orange-key-shdw);
     font-size: 32px;
@@ -190,6 +191,7 @@ h1 {
     padding-top: 3px;
     border: none;
     border-radius: 6px;
+    color: hsl(224, 36%, 15%);
     background-color: var(--light-grayish-orange-key-bgr1);
     box-shadow: 0 5px var(--grayish-orange-key-shdw);
     font-size: 23px;
