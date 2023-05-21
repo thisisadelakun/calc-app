@@ -61,7 +61,7 @@ const keyPads = document.querySelector("#keypad-col");
 function updateDisplay() {
     const displayValue = calculator.displayValue;
     const formattedValue = formatNumber(displayValue);
-    displayScreen.value = formattedValue;
+    displayScreen.innerHTML = formattedValue;
 } updateDisplay();
 
 function formatNumber(number) {
@@ -234,7 +234,7 @@ const acButton = document.getElementById("acButton");
 function updateDisplayPro() {
     const displayValuePro = parseFloat(calculatorPro.displayValuePro);
     const formattedValuePro = displayValuePro.toLocaleString("en");
-    displayScreenPro.value = formattedValuePro;
+    displayScreenPro.innerHTML = formattedValuePro;
 }
 
 updateDisplayPro();
@@ -398,99 +398,6 @@ function changeSignPro() {
     const newValuePro = parseFloat(displayValuePro) * -1;
     calculatorPro.displayValuePro = parseFloat(newValuePro.toFixed(7));
 }
-
-
-
-
-
-
-
-
-
-
-// function calculatingPro(initialOperandPro, currentOperandPro, operatorPro) {
-//     if (operatorPro === "+") {
-//         return initialOperandPro + currentOperandPro;
-//     } else if (operatorPro === "-") {
-//         return initialOperandPro - currentOperandPro;
-//     } else if (operatorPro === "x") {
-//         return initialOperandPro * currentOperandPro;
-//     } else if (operatorPro === "/") {
-//         return initialOperandPro / currentOperandPro;
-//     }
-
-//     return currentOperandPro;
-// }
-
-// function changeSignPro() {
-//     const
-//         displayValuePro = calculatorPro.displayValuePro;
-
-//     if (displayValuePro === "0") {
-//         return;
-//     }
-
-//     if (displayValuePro.startsWith("-")) {
-//         calculatorPro.displayValuePro = displayValuePro.substring(1);
-//     } else {
-//         calculatorPro.displayValuePro = "-" + displayValuePro;
-//     }
-// }
-
-// function calculatePower() {
-//     const displayValue = parseFloat(calculator.displayValue);
-//     const powerValue = parseFloat(prompt("Enter the power value:"));
-
-//     if (!isNaN(powerValue)) {
-//         const result = Math.pow(displayValue, powerValue);
-//         calculator.displayValue = result.toString();
-//     } else {
-//         // Handle invalid power value
-//         calculator.displayValue = "Error";
-//     }
-// }
-
-
-// function calculateSquareRoot() {
-//     const displayValue = parseFloat(calculator.displayValue);
-
-//     if (displayValue >= 0) {
-//         const result = Math.sqrt(displayValue);
-//         calculator.displayValue = result.toString();
-//     } else {
-//         calculator.displayValue = "Invalid input";
-//     }
-// }
-
-// function calculateExponentiation() {
-//     const displayValue = parseFloat(calculator.displayValue);
-//     const initialOperand = parseFloat(calculator.initialOperand);
-//     const result = Math.pow(initialOperand, displayValue);
-//     calculator.displayValue = result.toString();
-// }
-
-
-// function resetPro() {
-//     calculatorPro.displayValuePro = "0";
-//     calculatorPro.initialOperandPro = null;
-//     calculatorPro.awaitingCurrentOperandPro = false;
-//     calculatorPro.operatorPro = null;
-// }
-
-// function deleteDigitPro() {
-//     if (calculatorPro.awaitingCurrentOperandPro) {
-//         return; //
-//     }
-
-//     const displayValuePro = calculatorPro.displayValuePro;
-
-//     if (displayValuePro.length === 1) {
-//         calculatorPro.displayValuePro = "0";
-//     } else {
-//         calculatorPro.displayValuePro = displayValuePro.slice(0, -1);
-//     }
-// }
-
 
 // ----------------------------- ?_____END OF CALC PRO_____? -------------------------------------- 
 

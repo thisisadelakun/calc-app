@@ -26,8 +26,8 @@ body {
 
 h1,
 .header-right,
-.inputScreen input,
-.inputScreenPro input {
+.displayscreenPro,
+.displayscreen {
     color: var(--very-dark-grayish-yellow);
 }
 
@@ -39,8 +39,8 @@ h1,
     background-color: var(--orangekey-bgr2-toggle);
 }
 
-.inputScreen input,
-.inputScreenPro input {
+.displayscreen,
+.displayscreenPro {
     background-color: var(--screen-bgr2);
     border: none;
 }
