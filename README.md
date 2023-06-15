@@ -46,6 +46,6 @@ Users should be able to:
 - LinkedIn - [Adelakun Abayomi](https://www.linkedin.com/in/abayomi-adelakun-897227178/)
 - Portfolio - [Adelakun Abayomi](https://adelakunportfolio.netlify.app/)
 - Frontend Mentor - [@thisisadelakun](https://www.frontendmentor.io/profile/thisisadelakun)
-- Twitter - [@yourusername](https://www.twitter.com/thisisadelakun)
+- Twitter - [@thisisadelakun](https://www.twitter.com/thisisadelakun)
 
 
